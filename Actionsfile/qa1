@@ -1,0 +1,12 @@
+{
+	"application_properties": {
+    "APPCODE": "rcdo",
+		"APP_NAME": "rcdo-web",
+		"REGISTRY_URL": "escoacrprod01.azurecr.io",
+		"NAMESPACE": "rcdo-qa1",
+		"HELM_NAME": "helmcharts",
+		"VALUES_PATH": "helmcharts/env/qa1/rcdo-web/values.yaml",
+		"CONFIG_PATH": "env/qa1/rcdo-web/configmap.yaml"
+		
+	}
+}
