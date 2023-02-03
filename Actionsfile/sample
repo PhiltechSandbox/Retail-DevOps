@@ -4,7 +4,6 @@
 		"APP_NAME": "rcdo-web",
 		"REGISTRY_URL": "philtechsb.azurecr.io",
 		"NAMESPACE": "default",
-		"CONFIG_PATH": "env/dev/rcdo-web/configmap.yaml"
 		
 	}
 }
