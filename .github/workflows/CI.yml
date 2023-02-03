@@ -3,9 +3,6 @@ name: CI
 on:
  workflow_dispatch:
  
-env: 
-  ACTIONSFILE: Actionsfile/sample
-  TAG: np-${{ github.run_id }}-${{ github.run_number }}
 jobs:
   Docker_build:
     runs-on: ubuntu-latest
