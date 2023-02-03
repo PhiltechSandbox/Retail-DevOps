@@ -1,7 +1,7 @@
 {
 	"application_properties": {
-    "APPCODE": "rcdo",
-		"APP_NAME": "rcdo-web",
+    "APPCODE": "sandbox",
+		"APP_NAME": "sandbox",
 		"REGISTRY_URL": "philtechsb.azurecr.io",
 		"NAMESPACE": "default",
 		
