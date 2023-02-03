@@ -13,8 +13,8 @@ jobs:
       - name: Docker Build     
         uses: PhiltechSandbox/Docker-login@main
         with:
-          registry: ${{ steps.registry_url.outputs.prop }}
-          username: ${{ secrets.ACR_USER }}
-          password: ${{ secrets.ACR_PWD }}          
+          registry: philtechsb.azurecr.io
+          username: User
+          password: Abc123          
       - run: |
-          docker build --tag ${{ steps.registry_url.outputs.prop }}/${{ steps.appcode.outputs.prop }}/${{ steps.app_name.outputs.prop }}:${{ env.TAG }} .
+          docker build --tag ${{ steps.registry_url.outputs.prop }}:${{ env.TAG }} .
