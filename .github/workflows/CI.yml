@@ -14,25 +14,7 @@ jobs:
       - name: Download Artifact Jarfile.
         uses: actions/download-artifact@v2
         with:
-          name: AppArtifacts 
-      - name: Read application properties file
-        id: appcode
-        uses: albertsons/esgh-actions-jsonread@release
-        with:
-           path: ${{ env.ACTIONSFILE }}
-           prop_path: application_properties.APPCODE           
-      - name: Read application properties file
-        id: app_name
-        uses: albertsons/esgh-actions-jsonread@release
-        with:
-           path: ${{ env.ACTIONSFILE }}
-           prop_path: application_properties.APP_NAME
-      - name: Read application properties file
-        id: registry_url
-        uses: albertsons/esgh-actions-jsonread@release
-        with:
-           path: ${{ env.ACTIONSFILE }}
-           prop_path: application_properties.REGISTRY_URL                
+          name: AppArtifacts               
       - name: Docker Build     
         uses: albertsons/esgh-docker-login@v1
         with:
