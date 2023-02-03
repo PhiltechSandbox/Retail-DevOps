@@ -16,6 +16,5 @@ jobs:
       - name: Docker Build     
         uses: PhiltechSandbox/Docker-login@main
         with:
-          registry: ${{ steps.registry_url.outputs.prop }}          
-      - run: |
-          docker build --tag ${{ steps.registry_url.outputs.prop }}/${{ steps.appcode.outputs.prop }}/${{ steps.app_name.outputs.prop }}:${{ env.TAG }} .
+         push: true        
+         tags: philtechsb.azurecr.io/pbsb/ubuntu-latest:${{ github.sha }}
