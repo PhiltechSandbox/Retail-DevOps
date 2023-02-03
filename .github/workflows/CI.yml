@@ -16,7 +16,7 @@ jobs:
         with:
           name: AppArtifacts               
       - name: Docker Build     
-        uses: albertsons/esgh-docker-login@v1
+        uses: PhiltechSandbox/Docker-login@main
         with:
           registry: ${{ steps.registry_url.outputs.prop }}
           username: ${{ secrets.ACR_USER }}
