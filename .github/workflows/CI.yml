@@ -9,7 +9,6 @@ env:
 jobs:
   Docker_build:
     runs-on: [ jenkins-sl1 ]
-    needs: Maven_Build
     steps:
       - uses: actions/checkout@v2    
       - name: Download Artifact Jarfile.
