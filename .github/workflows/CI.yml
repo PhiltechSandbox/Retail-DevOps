@@ -8,8 +8,11 @@ env:
   TAG: np-${{ github.run_id }}-${{ github.run_number }}
 jobs:
   Docker_build:
-    runs-on: [ jenkins-sl1 ]
-    steps:               
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Docker Build     
         uses: PhiltechSandbox/Docker-login@main
         with:
