@@ -14,7 +14,7 @@ jobs:
         uses: PhiltechSandbox/Docker-login@main
         with:
           registry: philtechsb.azurecr.io
-          username: User
-          password: Abc123          
+          username: philtechsb
+          password: ecXARVhWjVnQs5EAMa9N9taTuLSrwfoRn4F5lAgYBw+ACRD04CgO          
       - run: |
           docker build --tag ${{ steps.registry_url.outputs.prop }}:${{ env.TAG }} .
