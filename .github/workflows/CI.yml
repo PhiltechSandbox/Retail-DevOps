@@ -2,6 +2,16 @@ name: CI
 
 on:
  workflow_dispatch:
+  inputs:
+   ACTIONSFILE:    
+        required: true
+        type: string
+   TAG:
+     required: true
+     type: string
+env: 
+  ACTIONSFILE: ${{ inputs.ACTIONSFILE }}
+  TAG: ${{ inputs.TAG }}    
  
 jobs:
   Docker_build:
