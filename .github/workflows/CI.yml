@@ -14,7 +14,8 @@ jobs:
         uses: PhiltechSandbox/Docker-login@main
         with:
           registry: philtechsb.azurecr.io
+          repo: pbsb/ubuntu/tomee
           username: philtechsb
           password: ecXARVhWjVnQs5EAMa9N9taTuLSrwfoRn4F5lAgYBw+ACRD04CgO          
       - run: |
-          docker build --tag ${{ steps.registry.outputs.prop }}/"pbsb/ubuntu/tomee":${{ env.TAG }} .
+          docker build --tag ${{ steps.registry.outputs.prop }}/${{ steps.repo.outputs.prop }}:${{ env.TAG }} .
