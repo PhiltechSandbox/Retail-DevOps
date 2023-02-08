@@ -24,8 +24,8 @@ jobs:
         uses: PhiltechSandbox/Docker-login@main
         with:
           registry: philtechsb.azurecr.io
-          appcode: pbsb
-          image: ubuntu/tomee
+          appcode: "pbsb"
+          image: "ubuntu/tomee"
           username: philtechsb
           password: ecXARVhWjVnQs5EAMa9N9taTuLSrwfoRn4F5lAgYBw+ACRD04CgO          
       - run: |
