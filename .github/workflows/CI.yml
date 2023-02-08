@@ -25,6 +25,5 @@ jobs:
         with:
           registry: philtechsb.azurecr.io
           username: philtechsb
-          password: ecXARVhWjVnQs5EAMa9N9taTuLSrwfoRn4F5lAgYBw+ACRD04CgO          
-      - run: |
-          docker build --tag ${{ steps.registry.outputs.prop }}/print("pbsb")/print("/ubuntu/tomee"):${{ env.TAG }} .
+          password: ecXARVhWjVnQs5EAMa9N9taTuLSrwfoRn4F5lAgYBw+ACRD04CgO
+          tags: philtechsb.azurecr.io/pbsb/ubuntu/tomee:${{ env.TAG }}
